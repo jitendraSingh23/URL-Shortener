@@ -11,7 +11,7 @@ export async function GET() {
     });
     return NextResponse.json(urls);
   } catch (error) {
-    console.error("error fetching URLs", error);
+    console.error("Error fetching URLs", error);
     return NextResponse.json({ error: "internal error" }, { status: 500 });
   }
 }

@@ -4,6 +4,7 @@
 //import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import { useState } from "react";
+import { Input } from "./ui/input";
 
 interface ShortenFormProps {
   handleUrlShortened: () => void;
@@ -35,7 +36,7 @@ export default function ShortenForm({ handleUrlShortened }: ShortenFormProps) {
   return (
     <form action="" className="mb-4" onSubmit={HandleSubmit}>
       <div className="space-y-4">
-        <input
+        <Input
           value={url}
           onChange={(e) => setUrl(e.target.value)}
           className="h-12 "

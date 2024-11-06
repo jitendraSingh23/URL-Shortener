@@ -2,6 +2,8 @@
 
 A simple minimilist url shortner made in **Nextjs** with  **Typescript**, **Tailwind** and **postgres** as database with **prisma** 
 
+
+
  ## Tech stack
 
  - **Next**
@@ -11,33 +13,26 @@ A simple minimilist url shortner made in **Nextjs** with  **Typescript**, **Tail
 
  
 
-## Docker(Local)
- 
-Run a postgres container
-```bash
- docker run -e POSTGRES_PASSWORD=password-d -p 5432:5432 postgres
-```
-Create a .env
+## Run Locally
+
+1.Create a .env
 ```.env
 DATABASE_URL="postgresql://postgres:password@localhost:5432/mydb?schema=public"
 NEXT_PUBLIC_BASE_URL="http://localhost:3000/"
 ```
 
-Use the package manager [npm](https://www.npmjs.com/) to install dependencies.
+ 
+2.Build the Docker image
 
 ```bash
-npm i 
+ docker-compose build
 ```
+3.Start the Docker containers
+
 ```bash
-npm run dev 
+docker-compose up
 ```
-Or
-```bash
-yarn i 
-```
-```bash
-yarn run dev 
-```
+4.Try to access app on your localhost:3000
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first
