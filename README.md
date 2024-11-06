@@ -2,6 +2,7 @@
 
 A simple minimilist url shortner made in **Nextjs** with  **Typescript**, **Tailwind** and **postgres** as database with **prisma** 
 
+![Screenshot 2024-11-05 200709](https://github.com/user-attachments/assets/0cda3ded-2f75-4330-adb4-e447aef5774b)
 
 
  ## Tech stack
@@ -33,6 +34,7 @@ NEXT_PUBLIC_BASE_URL="http://localhost:3000/"
 docker-compose up
 ```
 4.Try to access app on your localhost:3000
+[localhost](http://localhost:3000/).
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first
